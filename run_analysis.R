@@ -64,7 +64,7 @@ setwd("C:/Users/aallender/Desktop/Coursera/UCI HAR Dataset/")
 
 
 
-### 4. Appropriately labels the data set with descriptive variable names. 
+### 4. Appropriately labels the data set with descriptive variable names 
 # Clean up variable names
 	for (i in 1:length(colNames)) 
 	{
@@ -77,12 +77,12 @@ setwd("C:/Users/aallender/Desktop/Coursera/UCI HAR Dataset/")
   	colNames[i] <- gsub("Mag","Magnitude",colNames[i])
 	}
 
-# Reassign new column names in finalData
+# Reassign new column names in tblData
 	colnames(tblData) <- colNames
 
 
 
-### 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+### 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
 # Create tblData_xactivity tbl - w/o activity column
 	tblData_xactivity <- tblData[,names(tblData) != 'activity']
 

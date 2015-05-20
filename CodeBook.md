@@ -16,14 +16,28 @@ For each record in the dataset it is provided:
 
 
 ## Data Set Variables
+- features and activity contain data from UCI HAR Dataset files
 - xTrain, yTrain, xTest, yTest, subjectTrain and subjectTest contain data from UCI HAR Dataset files
 - traindata, testData and tblData merge previous datasets to further analysis
 - colNames stores column names for tblData
 - logV stores logical vector to extract mean and standard deviation measurements from tblData
 - tblData_xactivity subset of tblData without activity column
-- tidyData subset of tblData with 
+- tidyData subset of tblData with descriptive activity names and variable means for each activity and subject 
 
 
-- A similar approach is taken with activity names through the activities variable.
-- all_data merges x_data, y_data and subject_data in a big dataset.
-- Finally, averages_data contains the relevant averages which will be later stored in a .txt file. ddply() from the 
+## Data Set Transformations
+**Section 1.**  Merges the training and the test sets to create one data set  
+Reads in raw data files, assigns column names, and merges data to create tblData.
+
+**Section 2.**  Extracts only the measurements on the mean and standard deviation for each measurement  
+Creates logical vector and subsets tblData to store only TRUE values for ID, mean() and stddev() columns.
+
+**Section 3.**  Uses descriptive activity names to name the activities in the data set  
+Cleans up variable names and reassigns new column names to tblData.
+
+**Section 4.**  Appropriately labels the data set with descriptive variable names  
+Merges tblData with activity table to include descriptive activity names.  Updates colNames vector with new column names.
+
+**Section 5.**  From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject  
+Subsets tblData to include variable means for each activity and subject, and completes final merge to attach new column names. Writes tidyData.txt file to working directory.
+
