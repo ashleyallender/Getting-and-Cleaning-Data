@@ -7,8 +7,7 @@
 - A tidy data set
 - A link to a Github repository with your script for performing the analysis
 - A code book that describes the variables, the data, and any transformations or work that you performed to clean up the data called CodeBook.md
-
-- A README.md in the repo with your scripts.  This repo explains how all of the scripts work and how they are connected.  
+- A README.md in the repo with your scripts; this repo explains how all of the scripts work and how they are connected 
 
 
 
@@ -18,9 +17,9 @@
 
 
 ## Getting and Cleaning Data Repo Contents
-- **README.md** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This file
+- **README.md** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This file
 - **run_analysis.R** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R code for creating tidyData.txt file from collected smartphone data
-- **codeBook.md** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Describes variables, data, and raw data transformations
+- **codeBook.md** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Describes variables, data, and raw data transformations
 
 
 ## Preparation Required to Execute run_analysis.R
