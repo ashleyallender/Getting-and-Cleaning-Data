@@ -19,7 +19,7 @@
 ## Getting and Cleaning Data Repo Contents
 - **README.md** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This file
 - **run_analysis.R** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R code for creating tidyData.txt file from collected smartphone data
-- **codeBook.md** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Describes variables, data, and raw data transformations
+- **CodeBook.md** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Describes variables, data, and raw data transformations
 
 
 ## Preparation Required to Execute run_analysis.R
